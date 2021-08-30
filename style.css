@@ -1,3 +1,4 @@
+
 body{
     background-color: #f4f4f4;
     color: #555555;
@@ -29,6 +30,18 @@ a:visited{
     margin: 20px 0;
 
 }
+#profile{    
+    background-image: url('showcase.jpg');
+    background-position: center right;
+    min-height: 200;
+}
+#myimage{    
+    padding: 20px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
 #main-footer{
     background: #333;
     color: #fff;
