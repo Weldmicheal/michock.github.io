@@ -1,5 +1,64 @@
+* {
+    box-sizing: border-box;
+}
 body{
-    background-color: lightslategrey;
-    font-size: medium;
-    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aaa; 
+
+}
+
+.top {
+    background-color: #e5e5e5;
+    text-align: center;
+    padding: 20px;
+}
+
+.middle {
+    overflow: auto;
+}
+
+
+.left {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.left a {
+    background-color: #e5e5e5;
+    display: block;
+    color: black;
+    padding: 7px;
+    margin-top: 7px;    
+    width: 100%;
+}
+
+.center {
+    background-color: white;
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+}
+
+.right {
+    background-color: lightblue;
+    float: left;
+    width: 20%;
+    padding: 10px 20px;
+    margin-top: 7px;
+}
+
+.bottom {
+    background-color: #ccc;
+    text-align: center;
+    padding: 5px;
+    margin-top: 7px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 620px){
+    /*For mobile phone: */
+    .left, .center, .right{
+        width: 100%;
+    }
 }
