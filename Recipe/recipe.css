@@ -42,3 +42,22 @@ blockquote {
     background-color: #FFFFA8;
     font-style: italic;
 }
+
+
+
+.validator {
+    /* margin-top: 20px; */
+    float: right;
+    margin-bottom: 20px;
+}
+
+.validator > .right { 
+   float: right;
+   margin-bottom: 20px;
+}
+
+pre{
+    margin-top: 50px;
+}
+
+
