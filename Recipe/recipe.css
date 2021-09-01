@@ -6,7 +6,7 @@ body{
     background-color: white;
     color: #404040;
     font-size: 11pt;
-    font-family: Georgia, serif;
+    font-family: Georgia, Garamond, serif;
     background-image: url('images/silverware.jpg');
     background-repeat: repeat;
     background-attachment: fixed;
@@ -20,9 +20,12 @@ h1, h2{
     text-decoration: underline;
 }
 
+h1, .blockq {
+    font-weight: bold;
+}
+
 h1 {
     text-align: center;
-    font-weight: bold;
     font-size: 22pt;
 }
 
@@ -47,8 +50,6 @@ blockquote {
     font-style: italic;
 }
 
-
-
 .validator {
     /* margin-top: 20px; */
     float: right;
@@ -62,6 +63,7 @@ blockquote {
 
 pre{
     margin-top: 50px;
+    font-family: monospace;
 }
 
 
