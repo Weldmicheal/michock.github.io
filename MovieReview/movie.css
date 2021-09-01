@@ -1,0 +1,87 @@
+body {
+    background-image: url('images/background.png');
+    background-repeat: repeat;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 8pt;
+    margin: 0;
+    padding: 0;
+}
+
+.bannerimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.banner {
+    background-image: url('images/bannerbg.png');
+    background-repeat: repeat;
+    height: 50x;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24pt;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    border-radius: 20px;
+    border: 4px solid gray;
+    /* padding: 10px; */
+}
+
+.rotten {
+    background-image: url('images/rbg.png');
+    background-repeat: repeat;
+    border-radius: 20px 20px 0 0;
+    color: red;
+    font-size: 48pt;
+    font-weight: bold;
+    height: 83px;
+}
+.rotten img {
+    border-radius: 20px 0 0 0;
+    vertical-align: bottom;
+}
+.ratingAndCritics {
+    float: left;
+    width: 550px;
+    
+}
+.leftColumn {
+    float: left;
+    width: 45%;
+    margin-right: 2%;
+    margin-left: 1%;
+    margin-top: 10px;
+}
+
+.rightColumn {
+    float: left;
+    width: 45%;
+    margin-left: 1%;
+    margin-top: 10px;
+}
+.generalOverview {
+    float: left;
+    width: 250px;
+}
+
+.review {
+    font-weight: bold;
+    font-size: 8pt;
+    background-color: #E8DC9B;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.review img {
+    float: left;
+    padding: 5px;
+}
