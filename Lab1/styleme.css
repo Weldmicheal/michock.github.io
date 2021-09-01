@@ -36,3 +36,17 @@ h2 {
     color: black;
     font-size: 20px;
 }
+
+dt {
+    color: #f4f678;
+    font-weight: bold;
+}
+
+ol {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+ol li {
+    flex: 0 0 auto;
+}
