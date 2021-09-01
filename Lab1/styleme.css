@@ -1,0 +1,38 @@
+body {
+    background-color: #ccc;
+
+}
+a:link{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+P::first-letter {
+    font-size: 1.5em;
+}
+
+.important {
+    color: tomato;
+    font-style: italic;
+}
+
+li:nth-child(even) {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+li:first-child {
+    font-style: italic;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+h2 {
+    background-color: #fff;
+    color: black;
+    font-size: 20px;
+}
