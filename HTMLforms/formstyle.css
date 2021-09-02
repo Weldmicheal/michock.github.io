@@ -1,6 +1,52 @@
+body {
+    background-color: white;
+}
+legend {
+    border-top: 2px solid gray;
+    border-left: 2px solid gray;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    /* border-bottom-style: black; */
+    background-color: white;
+}
 
+fieldset{
+    background-color: rgb(187, 174, 218);
+    border-radius: 15px;
+    width: 500px;
+}
 
 a {
     text-decoration: none;
     color: red;
+    font-weight: normal;
+}
+
+input[type="submit"]{
+    background-color: indianred;
+}
+p {
+    font-weight: bold;
+    text-align: left;
+    
+}
+.per input {
+    margin-left: 20px;
+    /* display: inline-block; */
+    
+}
+.name input {
+    margin-left: 90px;
+}
+input#male {
+    margin-left: 85px;
+}
+.age input {
+    margin-left: 105px;
+}
+.favorite select {
+    margin-left: 48px;
+}
+input#min {
+    margin-left: 50px;
 }
