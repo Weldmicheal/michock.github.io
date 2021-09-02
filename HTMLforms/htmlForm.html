@@ -10,49 +10,42 @@
 </head>
 
 <body>
-    <header>
-        <img src="" alt="logo">
-    </header>
+    <form action="htmlForm.html" method="GET">
 
-    <fieldset>
-        <legend>New User Signup:</legend>
-        <p>Name:
-            <input type="text" name="name" size="16">
-        </p>
-        <p>Gender:
-            <label><input type="radio" name="sex" value="Male">Male</label>
-            <label><input type="radio" name="sex" value="Female" checked>Female</label>
-        </p>
-        <p>Age:
-            <input type="text" name="age" size="6" maxlength="2">
-        </p>
-        <p>Personality type:
-            <input type="text" name="personality" maxlength="4">
-            <a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp">(Don't know your type?)</a>
-        </p>
-        <p>Favorite OS:
-            <select name="os">
-                <option value="Windows" selected>Windows</option>
-                <option value="Mac">Mac OS X</option>
-                <option value="Linux">Linux</option>
-            </select>
-        </p>
-        <p>Seeking age:
-            <input type="text" name="min" size="6" maxlength="2" placeholder="min">
-            to
-            <input type="text" name="max" size="6" maxlength="2" placeholder="max">
-        </p>
-        <input type="submit" value="Sign Up">
-    </fieldset>
-    <div>
-        <p>This page is for single nerds to meet and date each other! Type in your personal information and wait for the nerdly luv to begin!
-            Thank you for using our site.
-        </p>
-        <p>Results and page &copy; Copyright NerdLuv Inc.</p>
-    </div>
-    <div>
-        <p><img src="" alt="">Back to front page</p>
-    </div>
+        <fieldset>
+            <legend>New User Signup:</legend>
+            <p class="name">Name:
+                <input type="text" name="name" size="16">
+            </p>
+            <p class="gender">Gender:
+                <label><input id="male" type="radio" name="gender" value="Male">Male</label>
+                <label><input type="radio" name="gender" value="Female" checked = "checked">Female</label>
+            </p>
+            <p class="age">Age:
+                <input type="text" name="age" size="6" maxlength="2">
+            </p>
+            <p class="per">Personality type:
+                <input type="text" name="personality" maxlength="4">
+                <a href="http://www.humanmetrics.com/cgi-win/JTypes2.asp">(Don't know your type?)</a>
+            </p>
+            <p class="favorite">Favorite OS:
+                <select name="os">
+                    <option value="Windows" selected>Windows</option>
+                    <option value="Mac">Mac OS X</option>
+                    <option value="Linux">Linux</option>
+                </select>
+            </p>
+            <p class="seeking">Seeking age:
+
+                <input id="min" type="text" name="min" size="6" maxlength="2" placeholder="min">
+                to
+                <input type="text" name="max" size="6" maxlength="2" placeholder="max">
+            </p>
+
+            <input type="submit" value="Sign Up">
+        </fieldset>
+    </form>
+
     <div class="validator">
         <p>
             <a href="http://validator.w3.org/check/referer" onclick="this.href='http://validator.w3.org/check?uri=' + 
