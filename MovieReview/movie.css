@@ -118,7 +118,18 @@ ul li {
     padding: 0;
 }
 
-/* .bar {
+.bar {
+    clear: both;
     background-color: #A2B964;
-    margin-bottom: 5px;
-} */
+    padding-bottom: 5px;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+}
+
+.validator {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+
+}
