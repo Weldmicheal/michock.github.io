@@ -1,5 +1,6 @@
 body{
-    background-color: gray;
+    background-image: url('logo.png');
+    background-position: center;
 
 }
 
@@ -11,5 +12,36 @@ h1 {
 
 input[type="text"]{
     background-color: lightblue;
-    
+
+}
+
+.validator {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+select {
+    background-color: lightgoldenrodyellow;
+}
+
+input[type="submit"]{
+    background-color: lightsalmon;
+    margin: auto;
+    max-width: 100px;
+    display: block;
+}
+
+legend {
+    display: block;    
+    margin: auto;
+}
+.container {
+    background-color: gray;
+    display: block;
+    max-width: 400px;
+    margin: auto;
+    border: 10px;
+    border-radius: 12px;
 }
