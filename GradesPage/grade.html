@@ -13,31 +13,43 @@
     <h1>Retrieve Your grade</h1>
 
     <form action="http://mumstudents.org/params.php">
-        <fieldset>
-            <legend>Fill the form</legend>
-            <p>Choose Assignment
-                <select name="assignment">
-                    <option>Assignment1</option>
-                    <option selected>Assignment2</option>
-                    <option>Assignment3</option>
-                    <option>Assignment4</option>
-                </select>
-            </p>
-            <p>Entry:
-                <label><input type="radio" name="entry" value="May" checked /> May</label>
-                <label><input type="radio" name="entry" value="August" checked /> August</label>
-                <label><input type="radio" name="entry" value="November" checked /> November</label>
-                <label><input type="radio" name="entry" value="February" checked /> February</label>
+        <div class="container">
+            <fieldset>
+                <legend>Fill the form</legend>
 
-            </p>
-            <p>Name: <input type="text" name="name" /> </p>
-            <p>Student Id: <input type="text" name="studentid" /> </p>
-            <p>Confirm that you are not lying and only looking up for your own grade:<br />
-                <label><input type="checkbox" value="agree" checked>I Agree</label>
-            </p>
-            <input type="submit" value="Get Grade!" />
-        </fieldset>
+                <p>Choose Assignment
+                    <select name="assignments[]" size="3" multiple>
+                        <option>Assignment1</option>
+                        <option selected>Assignment2</option>
+                        <option>Assignment3</option>
+                        <option>Assignment4</option>
+                        <option>Assignment5</option>
+                        <option>Assignment6</option>
+                    </select>
+                </p>
+                <p>Entry:
+                    <label><input type="radio" name="entry" value="May" checked /> May</label>
+                    <label><input type="radio" name="entry" value="August" checked /> August</label>
+                    <label><input type="radio" name="entry" value="November" checked /> November</label>
+                    <label><input type="radio" name="entry" value="February" checked /> February</label>
+
+                </p>
+                <p>Name: <input type="text" name="name" /> </p>
+                <p>Student Id: <input type="text" name="studentid" /> </p>
+                <p>Confirm that you are not lying and only looking up for your own grade:<br />
+                    <label><input type="checkbox" value="agree" checked>I Agree</label>
+                </p>
+                <input type="submit" value="Get Grade!" />
+            </fieldset>
+        </div>
     </form>
+    <div class="validator">
+        <p>
+            <a href="http://validator.w3.org/check/referer" onclick="this.href='http://validator.w3.org/check?uri=' + 
+            document.URL"> <img src="../w3c-html.png" alt="Valid HTML5" /></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="../w3c-css.png" alt="Valid CSS"> </a>
+        </p>
+    </div>
 
 </body>
 
