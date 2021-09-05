@@ -24,14 +24,17 @@ function biggerFont (){
     document.getElementById("usertext").style.fontSize =  size + 2 + "pt";
 }
 
-function popAlert () {
+
+function popAlert () {      
     alert("Bling changed");
     if (document.getElementById('bling').checked){
         var text = document.getElementById("usertext");
         text.style.fontWeight = "bold";
         text.style.textDecoration = "underline";
         text.style.color = "green";        
-        document.body.style.backgroundImage = "url('hundred.jpg')";        
+        document.body.style.backgroundImage = "url('hundreddollar.png')";  
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundSize = "cover";      
     }else {
         var text = document.getElementById("usertext");
         text.style.fontWeight = "normal";
