@@ -1,26 +1,18 @@
 
 window.onload = function () {
     
-    //document.getElementById("decorate").onclick = delayIncrease;
+    document.getElementById("decorate").onclick = delayIncrease;
     document.getElementById("bling").onchange = popAlert;
 };
-let timer = null;
-function delayIncrease (){
-    console.log(timer);   
-    if(timer === null){
-        timer = setInterval(biggerFont, 500);
-
-    }else {
-        clearInterval(timer);
-        timer = null;
-    }
+function delayIncrease (){   
+    setInterval(biggerFont, 500);   
 }
 function biggerFont (){
-    var element = document.getElementById('usertext');
-    var style = window.getComputedStyle(element).getPropertyValue('font-size');
-    var size = parseInt(style); 
+    var textArea = document.getElementById('usertext');
+    var fontSize = window.getComputedStyle(textArea).getPropertyValue('font-size');
+    var size = parseInt(fontSize); 
     // console.log(size);
-    console.log(window.getComputedStyle(element).getPropertyValue('font-family'));
+    console.log(window.getComputedStyle(textArea).getPropertyValue('font-family'));
     document.getElementById("usertext").style.fontSize =  size + 2 + "pt";
 }
 
