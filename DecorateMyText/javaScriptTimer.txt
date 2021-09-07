@@ -33,7 +33,7 @@ function booyah2() {
 	
 }
 function delay() {
-	alert("BOOYAH");
+	alert("BOOYAH!");
 }
 
 4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
