@@ -1,34 +1,56 @@
 
+(function () {
+
+    "use strict";
+    const accountCreator = (function () {
+        let accountName;
+        let balance;
+        return {
+            account: function (name, deposit) {
+                accountName = name;
+                balance = deposit;
+
+                return { name: accountName, balance: balance };
+
+            }
+        }
+    })();
+
+    const accountInfoList = [];
 
 
+    function createAccounts() {
 
-window.onload = function () {
-    document.getElementById("create").onclick = acc.account;
-    var accountInfoList = [];
+        let acct = accountCreator.account(document.getElementById("account").value, document.getElementById("deposit").value);
+        accountInfoList.push(acct);
+        document.getElementById("textarea").value = "";
 
-};
-var createAccount = function () {
-    var accountName;
-    var balance;
-    return {
-        account : function () {
-            accountName = document.getElementById("account").value;
-            balance = document.getElementById("deposit").value;
-           
-        },
-        addToList : function () {
-            accountInfoList[accountInfoList.length] = createAccount.account();
-            this.accountName = acct;
-            this.balance = bal;
-            document.getElementById("textarea").value += "Account name: " + acct + " Balance: " + bal + "\n";
-            console.log("Hiiiiiiiiiiiiii");
+        for (let accts of accountInfoList) {
+
+            document.getElementById("textarea").value += "Account name: " + accts.name  + " Balance: " + accts.balance + "\n";
 
         }
     }
 
-};
+    var rudyTimer = (function () {
+        let timer = null; // stores ID of interval timer 
+        return function delayMsg2() {
+            if (timer === null) {
+                timer = setInterval(rudy, 1000);
+            } else {
+                clearInterval(timer);
+                timer = null;
+            }
+        }
+    })();
 
-var acc = createAccount();
-acc.account();
+    function rudy() { // called each time the timer goes off
+        document.getElementById("output").innerHTML += " Rudy!";
+    }
 
+    window.onload = function () {
+        document.getElementById("create").onclick = createAccounts;
+        document.getElementById("btn").onclick = rudyTimer;
+    }
 
+})();
