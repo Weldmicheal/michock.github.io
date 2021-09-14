@@ -53,6 +53,10 @@ $(document).ready(function (){
         })
     }
     init();
+
+    $("div").click(function (){
+        $(this).css({"left": 300 + "px", "top" : 300 + "px"});
+    })
     
 });
 
