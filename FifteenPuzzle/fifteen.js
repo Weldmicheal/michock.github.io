@@ -151,14 +151,14 @@ $(document).ready(function () {
         var x = tilePosition.left;
         var y = tilePosition.top;
 
-        var tempX = x / 100;
-        var tempY = y / 100;
+        var tmpX = x / 100;
+        var tmpY = y / 100;
         $(div).css({
             top: column * HEIGHT,
             left: row * WIDTH,
         });
-        row = tempX;
-        column = tempY;
+        row = tmpX;
+        column = tmpY;
     }
 
     
