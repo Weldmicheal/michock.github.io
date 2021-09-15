@@ -80,6 +80,30 @@ $(document).ready(function () {
             alert("Tile can't move");
         }        
         
+        var flag = true;
+
+        $("#puzzlearea div").each(function (idx, val) {
+
+		var top = parseInt($(this).position().top);
+
+		var left = parseInt($(this).position().left);
+            console.log("x: " + left + " Y: " + top)
+
+		if (left != (idx%4*100) || top != parseInt(idx/4)*100) //checks if each piece matches its left and top position
+
+		{
+
+			flag = false;
+
+		}
+
+	});
+
+    if(flag){
+        alert("You Win...! Shuffle and Try Again")
+        $("#shufflebutton").on();
+    }
+	
     });
 
 
