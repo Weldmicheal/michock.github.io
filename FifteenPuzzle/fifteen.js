@@ -1,10 +1,9 @@
-const WIDTH = 100;
-const HEIGHT = 100;
-var column = 3;
-var row = 3;
 
 $(document).ready(function () {
-   
+
+    const SQUAREWIDTH = 100;
+    const SQUAREHEIGHT = 100;
+
     var init = function () {
 
         $("#puzzlearea div").each(function (index, value) {
@@ -19,11 +18,12 @@ $(document).ready(function () {
             });
             $(this).data('orgX', x)
             $(this).data('orgY', y)
-            //console.log($(this).data('orgX') + " " + $(this).data('orgY'))
 
 
         })
     }
+    var column = 3;
+    var row = 3;
     init();
     function xPosition(index) {
         return (index % 4) * 100;
@@ -98,8 +98,8 @@ $(document).ready(function () {
    
 
     var isTileMovable = function (div) {
-        var blankSquareX = row * WIDTH;
-        var blankSquareY = column * HEIGHT;
+        var blankSquareX = row * SQUAREWIDTH;
+        var blankSquareY = column * SQUAREHEIGHT;
 
         var tilePosition = $(div).position();
         var x = tilePosition.left;
@@ -144,8 +144,8 @@ $(document).ready(function () {
         var tmpX = x / 100;
         var tmpY = y / 100;
         $(div).css({
-            top: column * HEIGHT,
-            left: row * WIDTH,
+            top: column * SQUAREHEIGHT,
+            left: row * SQUAREWIDTH,
         });
         row = tmpX;
         column = tmpY;
@@ -158,8 +158,8 @@ $(document).ready(function () {
         let divX = $(div).position().left;
         let divY = $(div).position().top;
         $(div).css({
-            top: column * HEIGHT,
-            left: row * WIDTH,
+            top: column * SQUAREHEIGHT,
+            left: row * SQUAREWIDTH,
         });
         row = divX / 100;
         column = divY / 100;
