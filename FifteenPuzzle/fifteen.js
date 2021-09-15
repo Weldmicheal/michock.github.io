@@ -32,6 +32,8 @@ $(document).ready(function () {
         return Math.floor(index / 4) * 100;
     }
     $("#shufflebutton").click(function () {
+       $("#shufflebutton").off();
+
         init();
         let tileArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
         let randomizedPuzzle = shuffleTiles(tileArray);
@@ -93,19 +95,7 @@ $(document).ready(function () {
         return tiles;
     };
 
-    var moveBlankSquare = function (tiles) {
-        let totalTiles = tiles.length;
-        let index = Math.floor(Math.random() * totalTiles);
-        var div = $("#puzzlearea div")[index];
-        let divX = $(div).position().left;
-        let divY = $(div).position().top;
-        $(div).css({
-            top: column * HEIGHT,
-            left: row * WIDTH,
-        });
-        row = divX / 100;
-        column = divY / 100;
-    };
+   
 
     var isTileMovable = function (div) {
         var blankSquareX = row * WIDTH;
@@ -161,7 +151,19 @@ $(document).ready(function () {
         column = tmpY;
     }
 
-    
+    var moveBlankSquare = function (tiles) {
+        let totalTiles = tiles.length;
+        let index = Math.floor(Math.random() * totalTiles);
+        var div = $("#puzzlearea div")[index];
+        let divX = $(div).position().left;
+        let divY = $(div).position().top;
+        $(div).css({
+            top: column * HEIGHT,
+            left: row * WIDTH,
+        });
+        row = divX / 100;
+        column = divY / 100;
+    };
     
 
 
